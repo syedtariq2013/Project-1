@@ -1,0 +1,5 @@
+"etf","description","amount","startdate","enddate"
+VCR,Consumer Disc,10000,"2014-01-01","2014-07-20"
+VFH,Financials,20000,"2014-01-01","2014-07-20"
+VHT,Health Care,30000,"2014-01-01","2014-07-20"
+VOO,S&P 500,40000,"2014-01-01","2014-07-20"
