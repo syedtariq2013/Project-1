@@ -24,16 +24,18 @@ shinyUI
               br(),br(),
               "Click on",
               strong("Time History"),
-              "button to display a table of time history of individual ETFs.",  
+              "button to display a table of price history of individual ETFs.",  
               br(),br(),
               tags$a(href="http://rpubs.com/syedtariq/22582", "User Manual")
             ),
             uiOutput("show.etf.parameters")
             ,actionButton("calc", label = h6("All ETFs",align="center"))
-            ,actionButton("table", label = h6("Time History",align="center"))
+            ,actionButton("table", label = h6("Price History",align="center"))
      ),
      column(8,
-            plotOutput("etf.plot1")            
+            h6("Plot showing comparatve performance of selected ETFs",align="center")
+            ,plotOutput("etf.plot1")   
+            ,h6("Table displaying price history of selected ETFs",align="center")
             ,tableOutput("etf.table")
      )  
    )

@@ -80,13 +80,11 @@ shinyServer(function(input, output) {
       first <- TRUE
       for (t.etf in list.etfs) {
         prices <- calcPerformance(t.etf,input$dates[1],input$dates[2])
-        print(str(prices))
-        
         p <- coredata(prices) 
         colnames(p) <- t.etf
-        t <- index(prices)
+        t <- as.character(index(prices))
         if (first) {      
-          df.etfs <<- data.frame(t,p)
+          df.etfs <<- data.frame(date=t,p)
           first <- FALSE
         } else {
           df.etfs <<- cbind(df.etfs,p )

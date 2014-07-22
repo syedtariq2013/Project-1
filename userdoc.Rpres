@@ -20,7 +20,7 @@ Instructions
 - Select **start** and **end** dates using the dropdown calendar
 - Select upto 4 **ETFs** to be compared using the four dropdown list boxes
 - Click on **All ETFs** button to plot comparative performance
-- Click on **Time History** button to display a table of time histories of individual ETFs
+- Click on **Price History** button to display a table of price histories of individual ETFs
 
 Design of the Program
 ========================================================
@@ -33,6 +33,6 @@ artificial constraint that needs to be corrected (see Future Enhancements)
 Future Enhancments
 ========================================================
 
-- Allow user to enter a symbol, look up symbol on Yahoo Finance
+- Allow user to enter a symbol, look up details of the ETF on Yahoo Finance
 - Add other performance statistics
 
