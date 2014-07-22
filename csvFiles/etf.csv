@@ -1,5 +1,14 @@
-"etf","description","amount","startdate","enddate"
-VCR,Consumer Disc,10000,"2014-01-01","2014-07-20"
-VFH,Financials,20000,"2014-01-01","2014-07-20"
-VHT,Health Care,30000,"2014-01-01","2014-07-20"
-VOO,S&P 500,40000,"2014-01-01","2014-07-20"
+"etf.labels","company","category","type"
+VCR:Consumer Discr.,Vanguard,Sector,Large stock
+VDC:Consumer Staples,Vanguard,Sector,Large stock
+VDE:Energy,Vanguard,Sector,Large stock
+VFH:Financials,Vanguard,Sector,Large stock
+VHT:Health Care,Vanguard,Sector,Large stock
+VIS:Industrials,Vanguard,Sector,Large stock
+VGT:Info Technology,Sector,Large stock
+VAW:Materials,Vanguard,Sector,Large stock
+VNQ:REIT,Vanguard,Sector,Large stock
+VPU:Utilities,Vanguard,Sector,Large stock
+VOO:S&P 500,Vanguard,Market,Large stock
+SPY:S&P 500,SPDR,Market,Large stock
+GLD:Gold,SPDR,Commodity,Large stock

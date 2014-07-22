@@ -4,11 +4,12 @@ setGlobalVariables <- function() {
 
   dirPrepend <<- "./csvFiles/"
   etf.parameters <<- read.etf.file()
-  etfs <- etf.parameters$etf
-  etf.descriptions <- etf.parameters$description
-  etf.labels <<- cbind("none",etfs)
+  etfs <<- strsplit(etf.parameters$etf.labels,":")[[1]][1]
+  etf.default <<- etfs[1]
+  etf.labels <<- cbind("none:selected",etf.parameters$etf.labels)
+  etf.list <<- data.frame(etfs=etfs,filled=FALSE)
   plotOn <<- FALSE
-  df.etfs <<- data.frame()
+  list.etfs <<- c()
   return(etf.parameters)
   
 }

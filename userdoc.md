@@ -1,7 +1,7 @@
 ETF Analyzer: User Manual
 ========================================================
 author: Syed Tariq
-date: Tue Jul 22 02:43:43 2014
+date: Tue Jul 22 03:48:14 2014
 
 Purpose
 ========================================================
@@ -20,7 +20,7 @@ Instructions
 - Select **start** and **end** dates using the dropdown calendar
 - Select upto 4 **ETFs** to be compared using the four dropdown list boxes
 - Click on **All ETFs** button to plot comparative performance
-- Click on **Time History** button to plot time history of individual ETFs
+- Click on **Time History** button to display a table of time histories of individual ETFs
 
 Design of the Program
 ========================================================

@@ -3,35 +3,38 @@ source("global.R")
 
 shinyUI
 (fluidPage
- (#theme = "bootstrap.min.css",
-   headerPanel(h2("ETF Performance Comparison",align="center")),
-
-
+ (
+   titlePanel(h2("ETF Performance Comparison",align="center")),
+   
+   
    fluidRow(
      column(4,class="well",
             helpText(
-                h6("Instructions"),
-                "Select",
-                strong("start"), 
-                "and",
-                strong("end"),"dates.",
-                br(),br(),
-                "Select up to 4 ETFs to be compared.",
-                br(),br(),
-                "Click on",
-                strong("Calc"),
-                "button to plot comparative performance.",
-                hr()
+              h6("Instructions"),
+              "Select",
+              strong("start"), 
+              "and",
+              strong("end"),"dates.",
+              br(),br(),
+              "Select up to 4 ETFs to be compared.",
+              br(),br(),
+              "Click on",
+              strong("All ETFs"),
+              "button to plot comparative performance.",
+              br(),br(),
+              "Click on",
+              strong("Time History"),
+              "button to display a table of time history of individual ETFs.",  
+              br(),br(),
+              tags$a(href="http://rpubs.com/syedtariq/22582", "User Manual")
             ),
-            #uiOutput("show.etf.selection")
             uiOutput("show.etf.parameters")
-            ,actionButton("calc", label = h6("Calc",align="center"))
+            ,actionButton("calc", label = h6("All ETFs",align="center"))
+            ,actionButton("table", label = h6("Time History",align="center"))
      ),
      column(8,
-            
-            #headerPanel(h6("ETF Performance Versus Benchmark"))
-            plotOutput("etf.details")            
-            #,tableOutput("etf.return")
+            plotOutput("etf.plot1")            
+            ,tableOutput("etf.table")
      )  
    )
    
